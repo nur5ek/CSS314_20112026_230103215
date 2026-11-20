@@ -1,0 +1,92 @@
+{
+  "github_username": "nur5ek",
+  "gpu_uuid": "GPU-0344a0d0-97da-f2de-bb45-be927a462707",
+  "instance_seed": 15315124151827154504,
+  "mpi_ranks": 4,
+  "cartesian_dims": [
+    2,
+    2
+  ],
+  "global_shape": [
+    512,
+    512
+  ],
+  "local_padded_shape": [
+    258,
+    258
+  ],
+  "steps": 400,
+  "kappa_max": 0.23999962497115201,
+  "dx": 0.001949317738791423,
+  "dt": 1.3853603693425315e-06,
+  "dt_max": 3.9581724838358046e-06,
+  "serialized_ms": 10942.073529,
+  "overlapped_ms": 1823.0765949999998,
+  "serialized_cuda_event_ms": 10942.080078125,
+  "overlapped_cuda_event_ms": 1822.877685546875,
+  "serialized_energy_trace": [
+    {
+      "step": 0,
+      "energy": 0.07545530799851399,
+      "l2_residual": 0.0
+    },
+    {
+      "step": 100,
+      "energy": 0.0754423504656523,
+      "l2_residual": 0.003147103587643152
+    },
+    {
+      "step": 200,
+      "energy": 0.07543450609072044,
+      "l2_residual": 0.0031053913421686904
+    },
+    {
+      "step": 300,
+      "energy": 0.0754277306563374,
+      "l2_residual": 0.00307439378818136
+    },
+    {
+      "step": 400,
+      "energy": 0.07542146469924185,
+      "l2_residual": 0.0030458469317819017
+    }
+  ],
+  "overlapped_energy_trace": [
+    {
+      "step": 0,
+      "energy": 0.07545530799851399,
+      "l2_residual": 0.0
+    },
+    {
+      "step": 100,
+      "energy": 0.0754423504656523,
+      "l2_residual": 0.003147103587643152
+    },
+    {
+      "step": 200,
+      "energy": 0.07543450609072044,
+      "l2_residual": 0.0031053913421686904
+    },
+    {
+      "step": 300,
+      "energy": 0.0754277306563374,
+      "l2_residual": 0.00307439378818136
+    },
+    {
+      "step": 400,
+      "energy": 0.07542146469924185,
+      "l2_residual": 0.0030458469317819017
+    }
+  ],
+  "parity_max_diff": 0.0,
+  "ptx_counts": {
+    "st_shared_f64": 5,
+    "ld_shared_f64": 5,
+    "bar_sync": 1,
+    "st_shared_total": 5,
+    "ld_shared_total": 5,
+    "passed": true
+  },
+  "ptx_audit_passed": true,
+  "verification_passed": true
+}
