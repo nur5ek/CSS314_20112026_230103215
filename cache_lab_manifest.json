@@ -1,0 +1,237 @@
+{
+  "git_username": "nur5ek",
+  "cpu_model": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "cpu_signature": "AMD64::Intel64 Family 6 Model 154 Stepping 3, GenuineIntel::16",
+  "logical_cores": 16,
+  "cache_line_bytes": 64,
+  "instance_seed": 14823794338325687989,
+  "cpu_affinity_candidates": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "system": "Windows-11-10.0.26200-SP0",
+  "python_version": "3.12.10",
+  "num_threads": 4,
+  "iterations_per_thread": 60000000,
+  "measurements": [
+    {
+      "layout": "stride_1",
+      "stride_elements": 1,
+      "stride_bytes": 8,
+      "elapsed_ns": 275455300,
+      "ns_per_update": 1.1477304166666666,
+      "iterations_per_thread": 60000000,
+      "thread_count": 4,
+      "expected": [
+        120000000,
+        180000000,
+        120000000,
+        240000000
+      ],
+      "actual": [
+        120000000,
+        180000000,
+        120000000,
+        240000000
+      ],
+      "parity_passed": true,
+      "affinity_cpu_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "affinity_set": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "context_switches": {
+        "voluntary": 14,
+        "involuntary": 0,
+        "source": "psutil"
+      }
+    },
+    {
+      "layout": "stride_4",
+      "stride_elements": 4,
+      "stride_bytes": 32,
+      "elapsed_ns": 208425600,
+      "ns_per_update": 0.86844,
+      "iterations_per_thread": 60000000,
+      "thread_count": 4,
+      "expected": [
+        120000000,
+        180000000,
+        120000000,
+        240000000
+      ],
+      "actual": [
+        120000000,
+        180000000,
+        120000000,
+        240000000
+      ],
+      "parity_passed": true,
+      "affinity_cpu_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "affinity_set": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "context_switches": {
+        "voluntary": 10,
+        "involuntary": 0,
+        "source": "psutil"
+      }
+    },
+    {
+      "layout": "stride_8",
+      "stride_elements": 8,
+      "stride_bytes": 64,
+      "elapsed_ns": 99348400,
+      "ns_per_update": 0.41395166666666666,
+      "iterations_per_thread": 60000000,
+      "thread_count": 4,
+      "expected": [
+        120000000,
+        180000000,
+        120000000,
+        240000000
+      ],
+      "actual": [
+        120000000,
+        180000000,
+        120000000,
+        240000000
+      ],
+      "parity_passed": true,
+      "affinity_cpu_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "affinity_set": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "context_switches": {
+        "voluntary": 9,
+        "involuntary": 0,
+        "source": "psutil"
+      }
+    },
+    {
+      "layout": "stride_16",
+      "stride_elements": 16,
+      "stride_bytes": 128,
+      "elapsed_ns": 103476400,
+      "ns_per_update": 0.43115166666666666,
+      "iterations_per_thread": 60000000,
+      "thread_count": 4,
+      "expected": [
+        120000000,
+        180000000,
+        120000000,
+        240000000
+      ],
+      "actual": [
+        120000000,
+        180000000,
+        120000000,
+        240000000
+      ],
+      "parity_passed": true,
+      "affinity_cpu_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "affinity_set": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "context_switches": {
+        "voluntary": 12,
+        "involuntary": 0,
+        "source": "psutil"
+      }
+    },
+    {
+      "layout": "private",
+      "stride_elements": 8,
+      "stride_bytes": 64,
+      "elapsed_ns": 1498100,
+      "ns_per_update": 0.006242083333333333,
+      "iterations_per_thread": 60000000,
+      "thread_count": 4,
+      "expected": [
+        120000000,
+        180000000,
+        120000000,
+        240000000
+      ],
+      "actual": [
+        120000000,
+        180000000,
+        120000000,
+        240000000
+      ],
+      "parity_passed": true,
+      "affinity_cpu_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "affinity_set": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "context_switches": {
+        "voluntary": 17,
+        "involuntary": 0,
+        "source": "psutil"
+      }
+    }
+  ],
+  "llvm_audit": {
+    "native_i64_store_count_in_llvm": 1,
+    "compiler_memory_barrier_count_in_llvm": 1,
+    "python_object_fallback_detected": false,
+    "native_llvm_verified": true,
+    "all_counter_parity_passed": true,
+    "llvm_excerpt": "store i64 %.179, ptr %sunkaddr1, align 8\ntail call void asm sideeffect \"\", \"~{memory}\"() #0"
+  },
+  "verification_passed": true,
+  "execution_timestamp_utc": "2026-11-20T05:46:41Z"
+}
